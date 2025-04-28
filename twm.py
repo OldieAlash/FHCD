@@ -7,6 +7,7 @@ class Word:
     def __init__(self, word:str, index: int):
         #в self.props хранятся возможные морф св-ва, отсортированные по ч.р: ключ-ч.р., значение-список возможных наборов св-в
         self.props = dict()
+        self.word = word
         self.index = index
 
         for morph_var in morph.parse(word):
