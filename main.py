@@ -5,6 +5,7 @@ changes = 1
 while changes > 0:
     changes = 0
     for word_i in range(len(text.words)):
+        # если слово является омонимом и получилось установить ч.р. с помощью правила, обновляем информацию о ч.р. и омонимичности
         if text.words[word_i].is_homonymous and (prop := ruler.RuleProcessor.process_rules(text, word_i)):
             text.words[word_i].props = {prop[0].POS: prop}
             text.words[word_i].is_homonymous = False
