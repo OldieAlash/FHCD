@@ -53,12 +53,12 @@ class RuleProcessor:
     @staticmethod
     def n_find(text: Text, word_i: int, l_border: int, r_border: int, props) -> bool:
         '''неэлегантная проверка отсутствия слова с заданными морф. свойствами'''
-        return RuleProcessor.find(text, word_i, l_border, r_border, props)
+        return not RuleProcessor.find(text, word_i, l_border, r_border, props)
 
     @staticmethod
     def n_find_w(text: Text, word_i: int, l_border: int, r_border: int, props) -> bool:
         '''неэлегантная проверка отсутствия заданных слов'''
-        return RuleProcessor.find_w(text, word_i, l_border, r_border, props)
+        return not RuleProcessor.find_w(text, word_i, l_border, r_border, props)
 
     @staticmethod
     def find_punct(text: Text, word_i: int, l_border: int, r_border: int, props) -> bool:
