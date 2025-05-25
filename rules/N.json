@@ -3,7 +3,7 @@
     ["find",
       {"l_border" : 1,
       "r_border" : 0,
-      "props" : ["ADJF", "x_gender", "x_case", "x_number"]
+      "props" : ["A", "x_gender", "x_case", "x_number"]
       }
     ]
   ],
@@ -12,7 +12,7 @@
       "find",
       {"l_border" : 1,
         "r_border" : 0,
-        "props" : ["PREP"]
+        "props" : ["P"]
       }
     ]
   ],

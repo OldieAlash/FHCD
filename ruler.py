@@ -25,12 +25,12 @@ class RuleProcessor:
         # props = [getattr(text.words[word_i], prop[2:]) if prop.startswith('x_') else prop for prop in props]
         for i in range(max(word_i - l_border, 0), min(word_i + r_border + 1, len(text.words))):
             '''нам не нужно смотреть изучаемое слово и не интересны слова неподходящей ч.р.'''
-            # if i == word_i or props[0] not in text.words[i].props.keys(): continue
-            if i == word_i or twm.homonymy_groups[props[0]] not in text.words[i].props.keys(): continue
+            if i == word_i or props[0] not in text.words[i].props.keys(): continue
+            # if i == word_i or twm.homonymy_groups[props[0]] not in text.words[i].props.keys(): continue
             '''если есть слово подходящей ч.р.,
             мы перебираем варианты морф. свойств этого слова в качестве этой ч.р.'''
-            # for word_prop in text.words[i].props[props[0]]:
-            for word_prop in text.words[i].props[twm.homonymy_groups[props[0]]]:
+            for word_prop in text.words[i].props[props[0]]:
+            # for word_prop in text.words[i].props[twm.homonymy_groups[props[0]]]:
                 '''смотрим искомые св-ва, пропуская первое (ч.р.)'''
                 for prop in props[1:]:
                     '''если св-во не совпало, сразу пропускаем слово'''
