@@ -3,6 +3,13 @@ import string
 
 morph = pymorphy2.MorphAnalyzer()
 
+'''СЛОВАРЬ ОМОНИМИЧНЫХ СИТУАЦИЙ ВВЕДЁН ДЛЯ РЕАЛИЗАЦИИ ОПИСАННЫХ В ИСТОЧНИКАХ ПРАВИЛ. ОНИ РАБОТАЮТ С ТОЧНОСТЬЮ ДО ГРУПП,
+ПРИШЛОСЬ ПЕРЕЙТИ В ЭТУ НОТАЦИЮ'''
+
+homonymy_groups = {"NOUN" : "N", "ADJF" : "A", "ADJS" : "ABR", "COMP" : "COMP", "VERB": "VF", "INFN": "VINF",
+"PRTF": "A", "PRTS": "ABR", "GRND": "DV", "NUMR": "NNUM", "ADVB": "D", "NPRO": "N", "PRED": "PRED", "PREP": "P",
+"CONJ": "CONJ", "PRCL": "CH", "INTJ": "MJD"}
+
 class Word:
     def __init__(self, word:str, index: int, prev_lst_char):
         self.index = index
@@ -17,8 +24,8 @@ class Word:
         self.props = dict()
 
         for morph_var in morph.parse(self.word):
-            self.props.setdefault(morph_var.tag.POS, []).append((morph_var.tag, morph_var.normal_form))
-
+            # self.props.setdefault(morph_var.tag.POS, []).append((morph_var.tag, morph_var.normal_form))
+            self.props.setdefault(homonymy_groups[morph_var.tag.POS], []).append((morph_var.tag, morph_var.normal_form))
         self.is_homonymous = len(self.props.keys()) > 1
 
 
