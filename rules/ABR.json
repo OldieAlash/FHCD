@@ -1,0 +1,8 @@
+[
+  [["find", {"l_border" : 1, "r_border" : 0, "props" : ["ABR", "x_gender", "x_case", "x_number"]}],
+    ["find", {"l_border" : 0, "r_border" : 1, "props" : ["ABR", "x_gender", "x_case", "x_number"]}]],
+
+  [["find", {"l_border" : 0, "r_border" : 1, "props" : ["N", "x_gender", "x_case", "x_number"]}]],
+
+  [["find", {"l_border" : 1, "r_border" : 0, "props" : ["N", "x_gender", "x_case", "x_number"]}]]
+]

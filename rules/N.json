@@ -2,6 +2,10 @@
   [["find", {"l_border" : 3, "r_border" : 0, "props" : ["A", "x_gender", "x_case", "x_number"]}],
     ["n_find", {"l_border" : 2, "r_border" : 0, "props" : ["N", "x_gender", "x_case", "x_number"]}]],
 
+  [["find", {"l_border" : 3, "r_border" : 0, "props" : ["ABR", "x_gender", "x_case", "x_number"]}],
+    ["n_find", {"l_border" : 2, "r_border" : 0, "props" : ["N", "x_gender", "x_case", "x_number"]}]],
+
+
   [["find", {"l_border" : 3, "r_border" : 0, "props" : ["P"]}],
     ["n_find", {"l_border" : 2, "r_border" : 0, "props" : ["N"]}]],
 
