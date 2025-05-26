@@ -1,34 +1,9 @@
 [
-  [
-    ["find",
-      {"l_border" : 1,
-      "r_border" : 0,
-      "props" : ["VF"]
-      }
-    ]
-  ],
-  [
-    ["find",
-      {"l_border" : 0,
-      "r_border" : 1,
-      "props" : ["VF"]
-      }
-    ]
-  ],
-  [
-    ["find",
-      {"l_border" : 1,
-      "r_border" : 0,
-      "props" : ["VINF"]
-      }
-    ]
-  ],
-  [
-    ["find",
-      {"l_border" : 0,
-      "r_border" : 1,
-      "props" : ["VINF"]
-      }
-    ]
-  ]
+  [["find", {"l_border" : 1, "r_border" : 0, "props" : ["VF"]}]],
+
+  [["find", {"l_border" : 0, "r_border" : 1, "props" : ["VF"]}]],
+
+  [["find", {"l_border" : 1, "r_border" : 0, "props" : ["VINF"]}]],
+
+  [["find", {"l_border" : 0, "r_border" : 1, "props" : ["VINF"]}]]
 ]

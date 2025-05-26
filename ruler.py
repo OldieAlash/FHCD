@@ -1,6 +1,4 @@
 import json, os
-
-import twm
 from twm import Text
 
 
@@ -18,19 +16,15 @@ class RuleProcessor:
 
     @staticmethod
     def find(text: Text, word_i: int, l_border: int, r_border: int, props) -> bool:
-        # ТУТ У МН ЧИСЛА ПРИЛАГАТЕЛЬНЫХ НЕТ РОДА ПОЭТОМУ ГРАМЕМА ПЕРЕДАЕТСЯ NONE
-        # НУЖНО ИЛИ ПРОВЕРЯТЬ НА NONE ИЛИ ИГНОРИРОВАТЬ
+        '''Например, у прил., прич., сущ., в мн.ч. нет рода, поэтому проверяем на None'''
         '''в props должны приходить искомые морф св-ва, первым св-вом - ч.р.
         если св-во начинается с x_, то оно совпадает с таким же у изучаемого слова'''
-        # props = [getattr(text.words[word_i], prop[2:]) if prop.startswith('x_') else prop for prop in props]
         for i in range(max(word_i - l_border, 0), min(word_i + r_border + 1, len(text.words))):
             '''нам не нужно смотреть изучаемое слово и не интересны слова неподходящей ч.р.'''
             if i == word_i or props[0] not in text.words[i].props.keys(): continue
-            # if i == word_i or twm.homonymy_groups[props[0]] not in text.words[i].props.keys(): continue
             '''если есть слово подходящей ч.р.,
             мы перебираем варианты морф. свойств этого слова в качестве этой ч.р.'''
             for word_prop in text.words[i].props[props[0]]:
-            # for word_prop in text.words[i].props[twm.homonymy_groups[props[0]]]:
                 '''смотрим искомые св-ва, пропуская первое (ч.р.)'''
                 for prop in props[1:]:
                     '''если св-во не совпало, сразу пропускаем слово'''

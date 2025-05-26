@@ -1,115 +1,25 @@
 [
-  [
-    ["find",
-      {"l_border" : 3,
-      "r_border" : 0,
-      "props" : ["D"]
-      }
-    ],
-    ["n_find",
-      {"l_border" : 2,
-      "r_border" : 0,
-      "props" : ["VF"]
-      }
-    ]
-  ],
-  [
-    ["find",
-      {"l_border" : 3,
-      "r_border" : 0,
-      "props" : ["DV"]
-      }
-    ],
-    ["n_find",
-      {"l_border" : 2,
-      "r_border" : 0,
-      "props" : ["VF"]
-      }
-    ]
-  ],
-  [
-    ["find",
-      {"l_border" : 0,
-      "r_border" : 3,
-      "props" : ["D"]
-      }
-    ],
-    ["n_find",
-      {"l_border" : 0,
-      "r_border" : 2,
-      "props" : ["VF"]
-      }
-    ]
-  ],
-  [
-    ["find",
-      {"l_border" : 0,
-      "r_border" : 3,
-      "props" : ["DV"]
-      }
-    ],
-    ["n_find",
-      {"l_border" : 0,
-      "r_border" : 2,
-      "props" : ["VF"]
-      }
-    ]
-  ],
+  [["find", {"l_border" : 3, "r_border" : 0, "props" : ["D"]}],
+  ["n_find", {"l_border" : 2, "r_border" : 0, "props" : ["VF"]}]],
 
-  [
-    ["find",
-      {"l_border" : 3,
-      "r_border" : 0,
-      "props" : ["D"]
-      }
-    ],
-    ["n_find",
-      {"l_border" : 2,
-      "r_border" : 0,
-      "props" : ["VINF"]
-      }
-    ]
-  ],
-  [
-    ["find",
-      {"l_border" : 3,
-      "r_border" : 0,
-      "props" : ["DV"]
-      }
-    ],
-    ["n_find",
-      {"l_border" : 2,
-      "r_border" : 0,
-      "props" : ["VINF"]
-      }
-    ]
-  ],
-  [
-    ["find",
-      {"l_border" : 0,
-      "r_border" : 3,
-      "props" : ["D"]
-      }
-    ],
-    ["n_find",
-      {"l_border" : 0,
-      "r_border" : 2,
-      "props" : ["VINF"]
-      }
-    ]
-  ],
-  [
-    ["find",
-      {"l_border" : 0,
-      "r_border" : 3,
-      "props" : ["DV"]
-      }
-    ],
-    ["n_find",
-      {"l_border" : 0,
-      "r_border" : 2,
-      "props" : ["VINF"]
-      }
-    ]
-  ]
+  [["find", {"l_border" : 3, "r_border" : 0, "props" : ["DV"]}],
+    ["n_find", {"l_border" : 2, "r_border" : 0, "props" : ["VF"]}]],
+
+  [["find", {"l_border" : 0, "r_border" : 3, "props" : ["D"]}],
+    ["n_find", {"l_border" : 0, "r_border" : 2, "props" : ["VF"]}]],
+
+  [["find", {"l_border" : 0, "r_border" : 3, "props" : ["DV"]}],
+    ["n_find", {"l_border" : 0, "r_border" : 2, "props" : ["VF"]}]],
+
+  [["find", {"l_border" : 3, "r_border" : 0, "props" : ["D"]}],
+    ["n_find", {"l_border" : 2, "r_border" : 0, "props" : ["VINF"]}]],
+
+  [["find", {"l_border" : 3, "r_border" : 0, "props" : ["DV"]}],
+    ["n_find", {"l_border" : 2, "r_border" : 0, "props" : ["VINF"]}]],
+
+  [["find", {"l_border" : 0, "r_border" : 3, "props" : ["D"]}],
+    ["n_find", {"l_border" : 0, "r_border" : 2, "props" : ["VINF"]}]],
+
+  [["find", {"l_border" : 0, "r_border" : 3, "props" : ["DV"]}],
+    ["n_find", {"l_border" : 0, "r_border" : 2, "props" : ["VINF"]}]]
 ]

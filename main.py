@@ -1,4 +1,4 @@
-import twm, ruler
+import twm
 from textual_disambiguator import TextProcessor
 
 #Демонстрация работы

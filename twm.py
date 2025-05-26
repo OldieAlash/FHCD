@@ -3,9 +3,6 @@ import string
 
 morph = pymorphy2.MorphAnalyzer()
 
-'''СЛОВАРЬ ОМОНИМИЧНЫХ СИТУАЦИЙ ВВЕДЁН ДЛЯ РЕАЛИЗАЦИИ ОПИСАННЫХ В ИСТОЧНИКАХ ПРАВИЛ. ОНИ РАБОТАЮТ С ТОЧНОСТЬЮ ДО ГРУПП,
-ПРИШЛОСЬ ПЕРЕЙТИ В ЭТУ НОТАЦИЮ'''
-
 homonymy_groups = {"NOUN" : "N", "ADJF" : "A", "ADJS" : "ABR", "COMP" : "COMP", "VERB": "VF", "INFN": "VINF",
 "PRTF": "A", "PRTS": "ABR", "GRND": "DV", "NUMR": "NNUM", "ADVB": "D", "NPRO": "N", "PRED": "PRED", "PREP": "P",
 "CONJ": "CONJ", "PRCL": "CH", "INTJ": "MJD"}
@@ -31,10 +28,6 @@ class Word:
 
 class Text:
     def __init__(self, text:str):
-        '''сперва убираем пунктуацию (потом можно научиться обрабатывать текст,
-        сохраняя пунктуацию, понадобится для правил'''
-        #text_tmp = ''.join(filter(lambda x: x not in string.punctuation, text)).lower().split()
-        #self.words = [Word(text_tmp[i], i, text_tmp[i-1][-1] if i > 0 else None) for i in range(len(text_tmp))]
         text_tmp = text.lower().split()
         '''при обработке, где нет слева знака препинания, считаем что этот символ - пустой '' '''
         self.words = [Word(text_tmp[i], i, text_tmp[i-1][-1] if i > 0 else '') for i in range(len(text_tmp))]

@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a880e534-4eea-4ce7-84ed-d5887972d305" name="Changes" comment="bug fixes in changing to homonymy groups notation">
-      <change afterPath="$PROJECT_DIR$/rules/VF.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rules/VINF.json" afterDir="false" />
+    <list default="true" id="a880e534-4eea-4ce7-84ed-d5887972d305" name="Changes" comment="bug fixes &#10;added new rules and new solved types">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ruler.py" beforeDir="false" afterPath="$PROJECT_DIR$/ruler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rules/A.json" beforeDir="false" afterPath="$PROJECT_DIR$/rules/A.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rules/D.json" beforeDir="false" afterPath="$PROJECT_DIR$/rules/D.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rules/N.json" beforeDir="false" afterPath="$PROJECT_DIR$/rules/N.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rules/VF.json" beforeDir="false" afterPath="$PROJECT_DIR$/rules/VF.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rules/VINF.json" beforeDir="false" afterPath="$PROJECT_DIR$/rules/VINF.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twm.py" beforeDir="false" afterPath="$PROJECT_DIR$/twm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748166051987</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bug fixes &#10;added new rules and new solved types">
+      <option name="closed" value="true" />
+      <created>1748199956455</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748199956455</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -115,6 +126,7 @@
     <MESSAGE value="ruler: added find-word, find-punctuation and negative functions; bug fixes&#10;added punctuation processing&#10;added new rules for adjf and nouns" />
     <MESSAGE value="changed to homonymy groups notation" />
     <MESSAGE value="bug fixes in changing to homonymy groups notation" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixes in changing to homonymy groups notation" />
+    <MESSAGE value="bug fixes &#10;added new rules and new solved types" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes &#10;added new rules and new solved types" />
   </component>
 </project>
